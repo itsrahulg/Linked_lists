@@ -38,6 +38,7 @@ class Singly_linked_list:
 
     def add_at_position(self,element,position):
         newnode = Node(element)
+        starting = self.head
         for i in range(1,position-1):
             starting = starting.next
         newnode.next = starting.next
@@ -75,6 +76,25 @@ for i in range(N):
     linked_list.add_last(num)
 
 linked_list.display()
+
+linked_list.add_first(34)
+linked_list.display()
+
+linked_list.add_last(54)
+linked_list.display()
+
+linked_list.add_at_position(333,3)
+linked_list.display()
+
+linked_list.delete_at_position(2)
+linked_list.display()
+
+linked_list.delete_first()
+linked_list.display()
+
+linked_list.delete_last()
+linked_list.display()
+
 
 
 
